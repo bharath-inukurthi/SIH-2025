@@ -21,8 +21,11 @@ You can go through them and check out whichever part excites you more — whethe
 |----------------------------|------------|---------------------------|
 | Multilingual chatbot (Hindi, English, local language) | ☑️ Implemented | Supports English, Hindi, 1 local language |
 | Context management across multiple turns | ☑️ Implemented | Session history, session re-initialisation, follow-ups, conversation summaries |
+| Automatic Circular or Notices and News Ingestion | ☑️ Implemented | Any content circulated from officia institution mail will be indexed in knowldege base|
+| Admin backend to ingest FAQ's and other knowledge manually| ☑️ Implemented |Admin backend have necessary endpoints to insert the data manually into knowledge base|
 | Fast retrieval and smooth UX for circulars/forms | ☑️ Implemented | Index-based scrollbar, background loading, optimized rendering for 300+ circulars |
-| Retrieval-Augmented Generation (RAG) for official emails | ☑️ Implemented | WebSocket chatbot fetching relevant info with citations & attachments |
+| Retrieval-Augmented Generation (RAG) for official emails | ☑️ Implemented | WebSocket chatbot fetching relevant info from knowledge base |
+| Citation linked responses to verify sources | ☑️ Implemented | WebSocket chatbot responisng with citations & attachments links|
 | Scalable storage and authentication | ☑️ Implemented | Cloudflare R2 for circulars, Supabase Auth for login |
 | Daily query/response logs | ☑️ Implemented | Logs stored on VPS |
 
@@ -33,15 +36,6 @@ You can go through them and check out whichever part excites you more — whethe
 | Refactored UI twice (MVP → prod-level) | ☑️ Implemented | Improved user experience |
 | Lottie splash animation | ☑️ Implemented | Animated splash screen |
 | Caching with Supabase + Redis | ☑️ Implemented | Persistent sessions + active conversation cache |
-
- **PS Requirements Not Completed Yet** 
-| **Feature / Requirement** | **Status** | **Notes / Implementation** |
-|----------------------------|------------|---------------------------|
-| Human fallback when chatbot cannot answer | ⬜ Not yet | Pending implementation from PS |
-| Full multilingual support (≥5 languages) | ⬜ Not yet | Pending implementation from PS |
-| Intent recognition | ⬜ Not yet | Pending implementation from PS |
-| Embed chatbot on website/messaging platforms | ⬜ Not yet | Pending implementation from PS |
-| Advanced privacy/anonymization | ⬜ Not yet | Pending implementation from PS |
 
 ---
 
