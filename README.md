@@ -10,6 +10,28 @@ You can go through them and check out whichever part excites you more — whethe
 
 ---
 
+
+# 📊 Feature Status – SIH 2025 Project
+
+| **Feature Area**       | **Expected** | **Implemented** |
+|-------------------------|--------------|-----------------|
+| **Expo Mobile App** – User-facing app for resources | ☑️ | ☑️ (Expo app, refactored UI twice, Lottie splash animation) |
+| **Forms & Circulars Ingestion** – Institutional forms/circulars available to students | ☑️ | ☑️ (email-based ingestion, stored in Cloudflare R2, retrievable in app) |
+| **Storage & Infra** – Scalable, secure document storage | ☑️ | ☑️ (Cloudflare R2 for files, Supabase Auth for user login) |
+| **Circulars UX & Performance** – Smooth navigation, even for 300+ circulars | ☑️ | ☑️ (index-based scrollbar, background loading, optimized rendering) |
+| **Chatbot (RAG)** – Conversational assistant from institutional FAQs | ☑️ | ☑️ (WebSocket RAG chatbot; answers with citations & attachments) |
+| **Chat Sessions** – Context management across multiple turns | ☑️ | ☑️ (session history, re-initialisation, follow-ups, conversation summaries) |
+| **Caching** – Fast responses, efficient session storage | ☑️ | ☑️ (Supabase persistent sessions + Redis for active conversations) |
+| **Logs & Privacy** – Query/response logs & student privacy | ☑️ | ☑️ (basic logging of sessions) |
+| **Human Fallback** – Escalation when chatbot cannot answer | ☑️ | ⬜ Not yet |
+| **Multilingual Support** – ≥5 local languages | ☑️ | ⬜ Not yet (currently English, Hindi, one local language) |
+| **Intent Recognition** – Detect structured intents (fees, timetables, forms) | ☑️ | ⬜ Not yet |
+| **Integration with Website/Messaging** – WhatsApp/Telegram/College Website | ☑️ | ⬜ Not yet |
+| **Advanced Privacy Framework** – Strong anonymization & compliance | ☑️ | ⬜ Not yet |
+
+---
+
+
 ## 📂 Codebases at a Glance
 
 1. **[React Native App – Transfer Interface](https://github.com/bharath-inukurthi/KARE-BOT-SIH)**  
