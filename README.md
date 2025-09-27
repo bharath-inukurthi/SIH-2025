@@ -13,23 +13,35 @@ You can go through them and check out whichever part excites you more — whethe
 ---
 
 
-# 📊 Feature Status – SIH 2025 Project
+# 📊 Feature Status – SIH 2025 Project 
 
-| **Feature Area**       | **Expected** | **Implemented** |
-|-------------------------|--------------|-----------------|
-| **Expo Mobile App** – User-facing app for resources | ☑️ | ☑️ (Expo app, refactored UI twice, Lottie splash animation) |
-| **Forms & Circulars Ingestion** – Institutional forms/circulars available to students | ☑️ | ☑️ (email-based ingestion, stored in Cloudflare R2, retrievable in app) |
-| **Storage & Infra** – Scalable, secure document storage | ☑️ | ☑️ (Cloudflare R2 for files, Supabase Auth for user login) |
-| **Circulars UX & Performance** – Smooth navigation, even for 300+ circulars | ☑️ | ☑️ (index-based scrollbar, background loading, optimized rendering) |
-| **Chatbot (RAG)** – Conversational assistant from institutional FAQs | ☑️ | ☑️ (WebSocket RAG chatbot; answers with citations & attachments) |
-| **Chat Sessions** – Context management across multiple turns | ☑️ | ☑️ (session history, re-initialisation, follow-ups, conversation summaries) |
-| **Caching** – Fast responses, efficient session storage | ☑️ | ☑️ (Supabase persistent sessions + Redis for active conversations) |
-| **Logs & Privacy** – Query/response logs & student privacy | ☑️ | ☑️ (basic logging of sessions) |
-| **Human Fallback** – Escalation when chatbot cannot answer | ☑️ | ⬜ Not yet |
-| **Multilingual Support** – ≥5 local languages | ☑️ | ⬜ Not yet (currently English, Hindi, one local language) |
-| **Intent Recognition** – Detect structured intents (fees, timetables, forms) | ☑️ | ⬜ Not yet |
-| **Integration with Website/Messaging** – WhatsApp/Telegram/College Website | ☑️ | ⬜ Not yet |
-| **Advanced Privacy Framework** – Strong anonymization & compliance | ☑️ | ⬜ Not yet |
+ **Problem Statement (PS) Requirements Implemented** 
+
+| **Feature / Requirement** | **Status** | **Notes / Implementation** |
+|----------------------------|------------|---------------------------|
+| Multilingual chatbot (Hindi, English, local language) | ☑️ Implemented | Supports English, Hindi, 1 local language |
+| Context management across multiple turns | ☑️ Implemented | Session history, session re-initialisation, follow-ups, conversation summaries |
+| Fast retrieval and smooth UX for circulars/forms | ☑️ Implemented | Index-based scrollbar, background loading, optimized rendering for 300+ circulars |
+| Retrieval-Augmented Generation (RAG) for official emails | ☑️ Implemented | WebSocket chatbot fetching relevant info with citations & attachments |
+| Scalable storage and authentication | ☑️ Implemented | Cloudflare R2 for circulars, Supabase Auth for login |
+| Daily query/response logs | ☑️ Implemented | Logs stored on VPS |
+
+  **Additional Features Added by Me (Not in PS)** 
+ | **Feature / Requirement** | **Status** | **Notes / Implementation** |
+|----------------------------|------------|---------------------------|
+| Faculty Availability Checker | ☑️ Implemented | Checks if faculty is free in cabin based on timetable data |
+| Refactored UI twice (MVP → prod-level) | ☑️ Implemented | Improved user experience |
+| Lottie splash animation | ☑️ Implemented | Animated splash screen |
+| Caching with Supabase + Redis | ☑️ Implemented | Persistent sessions + active conversation cache |
+
+ **PS Requirements Not Completed Yet** 
+| **Feature / Requirement** | **Status** | **Notes / Implementation** |
+|----------------------------|------------|---------------------------|
+| Human fallback when chatbot cannot answer | ⬜ Not yet | Pending implementation from PS |
+| Full multilingual support (≥5 languages) | ⬜ Not yet | Pending implementation from PS |
+| Intent recognition | ⬜ Not yet | Pending implementation from PS |
+| Embed chatbot on website/messaging platforms | ⬜ Not yet | Pending implementation from PS |
+| Advanced privacy/anonymization | ⬜ Not yet | Pending implementation from PS |
 
 ---
 
